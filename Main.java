@@ -9,4 +9,8 @@ public class Main {
         else
             System.out.println(Main.HOLA_ES);
     }
+
+    static void show() {
+        System.out.println("-->");
+    }
 }
