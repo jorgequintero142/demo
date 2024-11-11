@@ -24,4 +24,8 @@ public class Main {
         }
         return HOLA_ES;
     }
+
+    static void show() {
+        System.out.println("-->");
+    }
 }
