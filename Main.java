@@ -27,7 +27,10 @@ public class Main {
 
     static void show() {
         System.out.println("-->");
+        System.out.println("-->");
+        System.out.println("-->");
     }
 
     //borrame
+    //borrame por favor
 }
