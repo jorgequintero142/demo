@@ -1,12 +1,18 @@
 public class Main {
     final static String HOLA_ES = "Hola mundo";
     final static String HOLA_EN = "Hello world";
+    final static String ENGLISH = "en";
 
     public static void main(String[] args) {
         System.out.println("Welcome back Jorge...");
-        if (args.length > 0 && args[0].equals("en"))
-            System.out.println(Main.HOLA_EN + "<>" + args[0]);
-        else
-            System.out.println(Main.HOLA_ES);
+        System.out.println(greeting(args));
+    }
+
+    static String greeting(String[] args) {
+        String language = args.length > 0 ? args[0] : "";
+        if (language.equals(ENGLISH)) {
+            return HOLA_EN;
+        }
+        return HOLA_ES;
     }
 }
